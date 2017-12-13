@@ -13,6 +13,12 @@ for spotify music (no longer in use will delete soon): album_details,artist_deta
                                                        new_release_song_detail
 
 
+***** additional notes on sentiment data *****
+sentiment_new_all table contains sentiment_new_removed table. sentiment_new_removed table contains all the tweets that has song_name (if there is one) removed, and then sentiment analysis is applied, whereas sentiment_new_all contains sentiment score for all tweets from tweets_new table and tweets_new_10 table
+
+the same goes for sentiment_hash_all and sentiment_hash_removed
+
+
            Table "public.billboard_top_100_artist"  (table that contains Billboard top 100 artists and their related info from Spotify)
      Column     |  Type  | Modifiers | Storage  | Description
 ----------------+--------+-----------+----------+-------------
