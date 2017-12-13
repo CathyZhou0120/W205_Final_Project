@@ -20,3 +20,10 @@ change the id (30k to 50k) everytime in incremental fashion at:
 
 cur.execute("select distinct tweet_id, tweet_text from table where id >=    and id <=  ")
 
+Notes:
+
+Prior to running the scripts, you need to add serial id to the tweets table:
+
+"ALTER TABLE XX ADD COLUMN ID SERIAL"
+
+then you can start using id as a paramter for batch work
