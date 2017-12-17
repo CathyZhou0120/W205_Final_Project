@@ -1,0 +1,9 @@
+2017-12-10 01:11:31,492 - streamparse.storm.component - ERROR - Exception in WordCounter.run()
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/streamparse-2.1.4-py2.7.egg/streamparse/storm/component.py", line 489, in run
+    self._run()
+  File "/usr/lib/python2.7/site-packages/streamparse-2.1.4-py2.7.egg/streamparse/storm/bolt.py", line 219, in _run
+    self.process(tup)
+  File "bolts/wordcount.py", line 52, in process
+    self.conn.set_isolation_level(ISOLATION_LEVEL_READ_UNCOMMITTED)
+DatabaseError: error with status PGRES_FATAL_ERROR and no message from the libpq

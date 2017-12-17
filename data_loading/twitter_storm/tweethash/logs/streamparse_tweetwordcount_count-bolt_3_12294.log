@@ -1,0 +1,10 @@
+2017-12-05 21:28:49,964 - streamparse.storm.component - ERROR - Exception in WordCounter.run()
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/streamparse-2.1.4-py2.7.egg/streamparse/storm/component.py", line 487, in run
+    self.initialize(storm_conf, context)
+  File "bolts/wordcount.py", line 25, in initialize
+    self.conn = psycopg2.connect(database="final_project", user="w205", password="pass", host="localhost", port="5432")
+  File "/usr/lib64/python2.7/site-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+OperationalError: FATAL:  the database system is shutting down
+
