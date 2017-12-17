@@ -1,0 +1,11 @@
+2017-12-06 17:33:22,089 - streamparse.storm.component - ERROR - Exception in WordCounter.run()
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/streamparse-2.1.4-py2.7.egg/streamparse/storm/component.py", line 489, in run
+    self._run()
+  File "/usr/lib/python2.7/site-packages/streamparse-2.1.4-py2.7.egg/streamparse/storm/bolt.py", line 219, in _run
+    self.process(tup)
+  File "bolts/wordcount.py", line 72, in process
+    safe_str(tup.values[20]),
+  File "bolts/wordcount.py", line 29, in safe_str
+    return value.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
